@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="container-wrapper">
+        
+
+        <div class="main-container">
+          <div class="nav-container">
+            <div class="nav-wrapper">
+              <nav class="nav-items-container">
+                <a class="nav-logo" href="#"
+                  ><span
+                    style="
+                      padding: 0 9px;
+                      background: #3117d5;
+                      border-radius: 50%;
+                      color: rgb(255, 255, 255);
+                    "
+                    >G</span
+                  >aurav</a
+                >
+                <ul class="nav-items" id="topNav">
+                  <a href="#home"><li class="nav-item">Home</li></a>
+                  <a class="nav-item-icon" href="#home"><i class="material-icons">home</i></a>
+                  <a href="#about"><li class="nav-item">About</li></a>
+                  <a class="nav-item-icon" href="#about"><i class="material-icons">account_circle</i></a>
+                  <a href="#resume"><li class="nav-item">Resume</li></a>
+                  <a class="nav-item-icon" href="#resume"><i class="material-icons">laptop</i></a>
+                  <a href="#projects"><li class="nav-item">Projects</li></a>
+                  <a class="nav-item-icon" href="#projects"><i class="material-icons">web</i></a>
+                  <a href="#contact"><li class="nav-item">Contact</li></a>
+                  <a class="nav-item-icon" href="#contact"><i class="material-icons">phone</i></a>
+                  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                     <i class="material-icons">menu</i>
+                  </a>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <div class="home-container" id="home">
+            <div class="home-wrapper">
+              <div class="hello">HEY ! I AM</div>
+              <div class="name">Gaurav Ghanwat</div>
+              <div class="intro">I'm a <span id="words"></span></div>
+            </div>
+          </div>
+          <div class="about-container" id="about">
+            <div class="about-wrapper">
+              <div class="left-about-wrapper">
+                <img src="images/my.jpg" alt="" />
+              </div>
+              <div class="right-about-wrapper">
+                <div class="title">ABOUT ME</div>
+                <div class="about-details-container">
+                  <div class="about-details-wrapper">
+                    <div class="about-details-wrapper-content">
+                      <strong>Name: </strong>Gaurav Ghanwat
+                    </div>
+                    <div class="about-details-wrapper-content">
+                      <strong>Date of Birth: </strong>21/08/2001
+                    </div>
+                    <div class="about-details-wrapper-content">
+                      <strong>Address: </strong>Rajapur Dist-Satara
+                      Maharashtra,India
+                    </div>
+                    <div class="about-details-wrapper-content">
+                      <strong>Pincode: </strong>415503
+                    </div>
+                    <div class="about-details-wrapper-content">
+                      <strong>Email: </strong>gauravghanwat2001@gmail.com
+                    </div>
+                    <div class="about-details-wrapper-content">
+                      <a
+                        class="about-details-wrapper-content-btn"
+                        href="images/Gaurav_Ghanwat_Resume.pdf"
+                        download
+                        >Download Resume</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="education-container" id="resume">
+            <div class="education-wrapper">
+              <div class="education-left">
+                <ul>
+                  <li class="education active">
+                    <a href="#education">Education</a>
+                  </li>
+                  <li class="experience">
+                    <a href="#experience">Experience</a>
+                  </li>
+                  <li class="skills"><a href="#skills">Skills</a></li>
+                  <li class="certificate">
+                    <a href="#certificate">Certificate</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="education-right">
+                <h3 class="heading">Education</h3>
+                <section id="education" class="education-details-card">
+                  <div class="education-details">
+                    <div class="education-year">2019-2023</div>
+                    <div class="education-title">
+                      Bachelor of Technology in Computer Enginnering
+                    </div>
+                    <div class="education-college">
+                      Rajarambapu Institute of Technology,Islampur
+                    </div>
+                    <div class="education-percentage">CGPA : 7.80</div>
+                  </div>
+                  <div class="education-details">
+                    <div class="education-year">2018-2019</div>
+                    <div class="education-title">XII</div>
+                    <div class="education-college">
+                      Mudhoji Highschool & Jr.College,Phaltan
+                    </div>
+                    <div class="education-percentage">Percentage: 70.31 %</div>
+                  </div>
+                  <div class="education-details">
+                    <div class="education-year">2016-2017</div>
+                    <div class="education-title">X</div>
+                    <div class="education-college">
+                      Maharaja Sayajirao Vidyalaya,Satara
+                    </div>
+                    <div class="education-percentage">Percentage: 87.40 %</div>
+                  </div>
+                </section>
+                <h3 class="heading">Experience</h3>
+                <section id="experience" class="education-details">
+                  <div class="education-year">Jan 2023-June 2023</div>
+                  <div class="education-title">
+                    Software Develoment Engineer Intern
+                  </div>
+                  <div class="education-college">Emtec Inc Pune</div>
+                  <div class="education-details"></div>
+                </section>
+                <h3 class="heading">Skills</h3>
+                <section id="skills" class="skills-card-wrapper">
+                  <div class="skill-card">
+                    <h2 class="skills-heading">HTML</h2>
+                    <div class="progress-bar-html">
+                      <progress
+                        value="80"
+                        min="0"
+                        max="100"
+                        style="visibility: hidden; height: 0; width: 0"
+                      >
+                        80%
+                      </progress>
+                    </div>
+                  </div>
+                  <div class="skill-card">
+                    <h1 class="skills-heading">CSS</h1>
+                    <div class="progress-bar-css">
+                      <progress
+                        value="80"
+                        min="0"
+                        max="100"
+                        style="visibility: hidden; height: 0; width: 0"
+                      >
+                        80%
+                      </progress>
+                    </div>
+                  </div>
+                  <div class="skill-card">
+                    <h1 class="skills-heading">JavaScript</h1>
+                    <div class="progress-bar-js">
+                      <progress
+                        value="80"
+                        min="0"
+                        max="100"
+                        style="visibility: hidden; height: 0; width: 0"
+                      >
+                        80%
+                      </progress>
+                    </div>
+                  </div>
+                </section>
+                <div class="skills-grid-container">
+                  <div class="skills-grid-item">
+                    <label for="file">ReactJS:</label>
+                    <div>
+                      <progress id="file" value="90" max="100">80%</progress>
+                    </div>
+                  </div>
+                  <div class="skills-grid-item">
+                    <label for="file">NodeJS:</label>
+                    <div>
+                      <progress id="file" value="80" max="100">80%</progress>
+                    </div>
+                  </div>
+                  <div class="skills-grid-item">
+                    <label for="file">Typescript:</label>
+                    <div>
+                      <progress id="file" value="70" max="100">80%</progress>
+                    </div>
+                  </div>
+                  <div class="skills-grid-item">
+                    <label for="file">NestJS:</label>
+                    <div>
+                      <progress id="file" value="70" max="100">80%</progress>
+                    </div>
+                  </div>
+                  <div class="skills-grid-item">
+                    <label for="file">Graphql:</label>
+                    <div>
+                      <progress id="file" value="80" max="100">80%</progress>
+                    </div>
+                  </div>
+                  <div class="skills-grid-item">
+                    <label for="file">MySQL</label>
+                    <div>
+                      <progress id="file" value="85" max="100">80%</progress>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-container" id="projects">
+            <div class="project-container-wrapper">
+              <div class="project-container-left"></div>
+              <div class="project-container-right">
+                <h1 class="project-heading">Projects</h1>
+                <div class="project-wrapper">
+                  <div class="project">
+                    <img src="images/agri.jpg" alt="" />
+                    <div class="layer">
+                      <h3>AGRE-CULTURE</h3>
+                      <p>
+                        This web application developed using ReactJS and
+                        NodeJS,ExpressJs.Here user can add products in cart.
+                      </p>
+                      <a
+                        href="https://github.com/Gaurav21082001/agreculture"
+                        target="_blank"
+                        ><i class="material-icons">link</i></a
+                      >
+                    </div>
+                  </div>
+                  <div class="project">
+                    <img src="images/blog.jpg" alt="" />
+                    <div class="layer">
+                      <h3>Blogsapp</h3>
+                      <p>
+                        Here easily user can post and update their blogs.This
+                        web application developed using ReactJS and
+                        NodeJS,ExpressJs
+                      </p>
+                      <a
+                        href="https://github.com/Gaurav21082001/blogapp"
+                        target="_blank"
+                        ><i class="material-icons">link</i></a
+                      >
+                    </div>
+                  </div>
+                  <div class="project">
+                    <img src="images/library.jpg" alt="" />
+                    <div class="layer">
+                      <h3>Library Management Project (Server-side)</h3>
+                      <p>
+                        Developed server-side project using Typescript and
+                        NestJS.
+                      </p>
+                      <a
+                        href="https://github.com/Gaurav21082001/Library-Management"
+                        target="_blank"
+                        ><i class="material-icons">link</i></a
+                      >
+                    </div>
+                  </div>
+                  <div class="project">
+                    <img src="images/todo.jpg" alt="" />
+                    <div class="layer">
+                      <h3>Todo List</h3>
+                      <p>
+                        Where user easily maintain the todo list.It developed
+                        using ReactJS,Typescript and Graphql
+                      </p>
+                      <a
+                        href="https://github.com/Gaurav21082001/TodoList"
+                        target="_blank"
+                        ><i class="material-icons">link</i></a
+                      >
+                    </div>
+                  </div>
+                  <div class="project">
+                    <img src="images/grocery.jpg" alt="" />
+                    <div class="layer">
+                      <h3>Grocery Shop</h3>
+                      <p>Designing inteface using HTML,CSS and JavaScript.</p>
+                      <a
+                        href="https://github.com/Gaurav21082001/Grocery-Shop-Frontend-using-HTML-CSS"
+                        target="_blank"
+                        ><i class="material-icons">link</i></a
+                      >
+                    </div>
+                  </div>
+                  <div class="project">
+                    <img src="images/pizza.jpg" alt="" />
+                    <div class="layer">
+                      <h3>Pizza Shop</h3>
+                      <p>Designing inteface using HTML and CSS.</p>
+                      <a
+                        href="https://github.com/Gaurav21082001/Pizza-shop-using-HTML-CSS"
+                        target="_blank"
+                        ><i class="material-icons">link</i></a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="contact-container" id="contact">
+            <div class="contact-container-wrapper">
+              <div class="project-heading">Contact me</div>
+              <div class="contact-cards">
+                <div class="contact-card">
+                  <div class="contact">
+                    <div class="icon-square">
+                      <i class="material-icons">email</i>
+                    </div>
+
+                    <div class="contact-title">Email Address</div>
+                    <div class="email">gauravghanwat2001</div>
+                  </div>
+                </div>
+                <div class="contact-card">
+                  <div class="contact">
+                    <div class="icon-square">
+                      <i class="material-icons">message</i>
+                    </div>
+                    <div class="contact-title">Contact Number</div>
+                    <div class="email">9730429404</div>
+                  </div>
+                </div>
+                <div class="contact-card">
+                  <div class="contact">
+                    <div class="icon-square">
+                      <i class="material-icons">my_location</i>
+                    </div>
+                    <div class="contact-title">Address</div>
+                    <div class="email">
+                      Rajapur Dist-Satara <br />Maharashtra,India
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script type="text/javaScript">
+                             var words=new Typed("#words",{
+                              strings:["Fresher ","Web developer "],
+                              loop:true,
+                              typeSpeed:100,
+                              backSpeed:80,
+                              backdelay:1000,
+                             });
+                             const sections = document.querySelectorAll("section");
+                             const navLi =document.querySelectorAll(".education-left ul li");
+                            console.log(sections);
+                            console.log(navLi);
+
+                             window.onscroll = () => {
+              var current = "";
+
+              sections.forEach((section) => {
+                const sectionTop = section.offsetTop;
+                if (pageYOffset >= sectionTop - 250) {
+                  current = section.getAttribute("id"); }
+              });
+              console.log(current)
+              navLi.forEach((li) => {
+                li.classList.remove("active");
+                if (li.classList.contains(current)) {
+      li.classList.add('active');
+      }
+              });
+            };
+            function myFunction() {
+  var x = document.getElementById("topNav");
+  if (x.className === "nav-items") {
+    x.className += " responsive";
+  } else {
+    x.className = "nav-items";
+  }
+  console.log(x.className);
+}
+    </script>
+  </body>
+</html>
