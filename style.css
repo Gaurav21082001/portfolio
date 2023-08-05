@@ -130,7 +130,7 @@ section {
   margin-right: 20px;
 }
 .title {
-  font-size: 50px;
+  font-size: 30px;
   font-weight: 600;
   padding: 20px 40px 0px 40px;
 }
@@ -190,7 +190,7 @@ section {
 }
 .heading {
   margin: 20px 10px;
-  font-size: 50px;
+  font-size: 30px;
   font-weight: 600;
   color: rgb(22, 145, 197);
 }
@@ -386,6 +386,7 @@ section {
 }
 .contact-container {
   margin: 20px;
+  height: auto;
 }
 .contact-cards {
   display: grid;
@@ -396,7 +397,7 @@ section {
   box-shadow: 5px 10px 8px #888888;
 }
 .contact {
-  padding: 50px 10px;
+  padding: 30px 10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -406,21 +407,20 @@ section {
   position: relative;
   font-size: 50px;
   color: #4228ed;
-  margin-bottom: 20px;
   display: flex;
   align-items: center;
   padding: 25px;
 }
 .contact .email {
-  margin-top: 40px;
+  margin-top: 20px;
   font-size: 25px;
   font-weight: 600;
-  padding-bottom: 50px;
+  padding-bottom: 20px;
   color: #888888;
   text-align: center;
 }
 .contact-title {
-  margin-top: 15px;
+  margin-top: 10px;
   font-size: 30px;
   font-weight: 900;
 }
