@@ -19,8 +19,6 @@
   <body>
     <div class="container">
       <div class="container-wrapper">
-        
-
         <div class="main-container">
           <div class="nav-container">
             <div class="nav-wrapper">
@@ -38,17 +36,31 @@
                 >
                 <ul class="nav-items" id="topNav">
                   <a href="#home"><li class="nav-item">Home</li></a>
-                  <a class="nav-item-icon" href="#home"><i class="material-icons">home</i></a>
+                  <a class="nav-item-icon" href="#home"
+                    ><i class="material-icons">home</i></a
+                  >
                   <a href="#about"><li class="nav-item">About</li></a>
-                  <a class="nav-item-icon" href="#about"><i class="material-icons">account_circle</i></a>
+                  <a class="nav-item-icon" href="#about"
+                    ><i class="material-icons">account_circle</i></a
+                  >
                   <a href="#resume"><li class="nav-item">Resume</li></a>
-                  <a class="nav-item-icon" href="#resume"><i class="material-icons">laptop</i></a>
+                  <a class="nav-item-icon" href="#resume"
+                    ><i class="material-icons">laptop</i></a
+                  >
                   <a href="#projects"><li class="nav-item">Projects</li></a>
-                  <a class="nav-item-icon" href="#projects"><i class="material-icons">web</i></a>
+                  <a class="nav-item-icon" href="#projects"
+                    ><i class="material-icons">web</i></a
+                  >
                   <a href="#contact"><li class="nav-item">Contact</li></a>
-                  <a class="nav-item-icon" href="#contact"><i class="material-icons">phone</i></a>
-                  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                     <i class="material-icons">menu</i>
+                  <a class="nav-item-icon" href="#contact"
+                    ><i class="material-icons">phone</i></a
+                  >
+                  <a
+                    href="javascript:void(0);"
+                    class="icon"
+                    onclick="myFunction()"
+                  >
+                    <i class="material-icons">menu</i>
                   </a>
                 </ul>
               </nav>
@@ -110,7 +122,6 @@
                     <a href="#experience">Experience</a>
                   </li>
                   <li class="skills"><a href="#skills">Skills</a></li>
-                  
                 </ul>
               </div>
               <div class="education-right">
@@ -152,51 +163,55 @@
                   <div class="education-college">Emtec Inc Pune</div>
                   <div class="education-details"></div>
                 </section>
-                <h3 class="heading">Skills</h3>
-                <section id="skills" class="skills-card-wrapper">
-                  <div class="skill-card">
-                    <h2 class="skills-heading">HTML</h2>
-                    <div class="progress-bar-html">
-                      <progress
-                        value="80"
-                        min="0"
-                        max="100"
-                        style="visibility: hidden; height: 0; width: 0"
-                      >
-                        80%
-                      </progress>
+                
+                <section id="skills">
+                  <h3 class="heading">Skills</h3>
+                  <div class="skills-card-wrapper">
+                    <div class="skill-card">
+                      <h2 class="skills-heading">ReactJS</h2>
+                      <div class="progress-bar-html">
+                        <progress
+                          value="80"
+                          min="0"
+                          max="100"
+                          style="visibility: hidden; height: 0; width: 0"
+                        >
+                          80%
+                        </progress>
+                      </div>
+                    </div>
+                    <div class="skill-card">
+                      <h1 class="skills-heading">CSS</h1>
+                      <div class="progress-bar-css">
+                        <progress
+                          value="80"
+                          min="0"
+                          max="100"
+                          style="visibility: hidden; height: 0; width: 0"
+                        >
+                          80%
+                        </progress>
+                      </div>
+                    </div>
+                    <div class="skill-card">
+                      <h1 class="skills-heading">JavaScript</h1>
+                      <div class="progress-bar-js">
+                        <progress
+                          value="80"
+                          min="0"
+                          max="100"
+                          style="visibility: hidden; height: 0; width: 0"
+                        >
+                          80%
+                        </progress>
+                      </div>
                     </div>
                   </div>
-                  <div class="skill-card">
-                    <h1 class="skills-heading">CSS</h1>
-                    <div class="progress-bar-css">
-                      <progress
-                        value="80"
-                        min="0"
-                        max="100"
-                        style="visibility: hidden; height: 0; width: 0"
-                      >
-                        80%
-                      </progress>
-                    </div>
-                  </div>
-                  <div class="skill-card">
-                    <h1 class="skills-heading">JavaScript</h1>
-                    <div class="progress-bar-js">
-                      <progress
-                        value="80"
-                        min="0"
-                        max="100"
-                        style="visibility: hidden; height: 0; width: 0"
-                      >
-                        80%
-                      </progress>
-                    </div>
-                  </div>
-                </section>
+                  
+                
                 <div class="skills-grid-container">
                   <div class="skills-grid-item">
-                    <label for="file">ReactJS:</label>
+                    <label for="file">HTML:</label>
                     <div>
                       <progress id="file" value="90" max="100">80%</progress>
                     </div>
@@ -232,6 +247,7 @@
                     </div>
                   </div>
                 </div>
+              </section>
               </div>
             </div>
           </div>
@@ -372,43 +388,43 @@
     </div>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script type="text/javaScript">
-                             var words=new Typed("#words",{
-                              strings:["Fresher ","Web developer "],
-                              loop:true,
-                              typeSpeed:100,
-                              backSpeed:80,
-                              backdelay:1000,
-                             });
-                             const sections = document.querySelectorAll("section");
-                             const navLi =document.querySelectorAll(".education-left ul li");
-                            console.log(sections);
-                            console.log(navLi);
+                                   var words=new Typed("#words",{
+                                    strings:["Fresher ","Web developer "],
+                                    loop:true,
+                                    typeSpeed:100,
+                                    backSpeed:80,
+                                    backdelay:1000,
+                                   });
+                                   const sections = document.querySelectorAll("section");
+                                   const navLi =document.querySelectorAll(".education-left ul li");
+                                  console.log(sections);
+                                  console.log(navLi);
 
-                             window.onscroll = () => {
-              var current = "";
+                                   window.onscroll = () => {
+                    var current = "";
 
-              sections.forEach((section) => {
-                const sectionTop = section.offsetTop;
-                if (pageYOffset >= sectionTop - 250) {
-                  current = section.getAttribute("id"); }
-              });
-              console.log(current)
-              navLi.forEach((li) => {
-                li.classList.remove("active");
-                if (li.classList.contains(current)) {
-      li.classList.add('active');
+                    sections.forEach((section) => {
+                      const sectionTop = section.offsetTop;
+                      if (pageYOffset >= sectionTop - 250) {
+                        current = section.getAttribute("id"); }
+                    });
+                    console.log(current)
+                    navLi.forEach((li) => {
+                      li.classList.remove("active");
+                      if (li.classList.contains(current)) {
+            li.classList.add('active');
+            }
+                    });
+                  };
+                  function myFunction() {
+        var x = document.getElementById("topNav");
+        if (x.className === "nav-items") {
+          x.className += " responsive";
+        } else {
+          x.className = "nav-items";
+        }
+        console.log(x.className);
       }
-              });
-            };
-            function myFunction() {
-  var x = document.getElementById("topNav");
-  if (x.className === "nav-items") {
-    x.className += " responsive";
-  } else {
-    x.className = "nav-items";
-  }
-  console.log(x.className);
-}
     </script>
   </body>
 </html>
