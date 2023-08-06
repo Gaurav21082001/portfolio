@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div class="education-container" id="resume">
+      <div class="education-wrapper">
+        <div class="education-left">
+          <ul>
+            <li class="education active">
+              <a href="#education">Education</a>
+            </li>
+            <li class="experience">
+              <a href="#experience">Experience</a>
+            </li>
+            <li class="skills"><a href="#skills">Skills</a></li>
+          </ul>
+        </div>
+        <div class="education-right">
+          
+          <section id="education" class="education-details-card">
+            <h3 class="heading">Education</h3>
+            <div class="education-details">
+              <div class="education-year">2019-2023</div>
+              <div class="education-title">
+                Bachelor of Technology in Computer Enginnering
+              </div>
+              <div class="education-college">
+                Rajarambapu Institute of Technology,Islampur
+              </div>
+              <div class="education-percentage">CGPA : 7.80</div>
+            </div>
+            <div class="education-details">
+              <div class="education-year">2018-2019</div>
+              <div class="education-title">XII</div>
+              <div class="education-college">
+                Mudhoji Highschool & Jr.College,Phaltan
+              </div>
+              <div class="education-percentage">Percentage: 70.31 %</div>
+            </div>
+            <div class="education-details">
+              <div class="education-year">2016-2017</div>
+              <div class="education-title">X</div>
+              <div class="education-college">
+                Maharaja Sayajirao Vidyalaya,Satara
+              </div>
+              <div class="education-percentage">Percentage: 87.40 %</div>
+            </div>
+          </section>
+          
+          <section id="experience" >
+            <h3 class="heading">Experience</h3>
+            <div class="education-details">
+              <div class="education-year">Jan 2023-June 2023</div>
+              <div class="education-title">
+                Software Develoment Engineer Intern
+              </div>
+              <div class="education-college">Emtec Inc Pune</div>
+              <div class="education-details"></div>
+            </div>
+           
+          </section>
+
+          <section id="skills">
+            <h3 class="heading">Skills</h3>
+            <div class="skills-card-wrapper">
+              <div class="skill-card">
+                <h3 class="education-title">ReactJS</h3>
+                <div class="progress-bar-html">
+                  <progress
+                    value="80"
+                    min="0"
+                    max="100"
+                    style="visibility: hidden; height: 0; width: 0"
+                  >
+                    80%
+                  </progress>
+                </div>
+              </div>
+              <div class="skill-card">
+                <h1 class="education-title">CSS</h1>
+                <div class="progress-bar-css">
+                  <progress
+                    value="80"
+                    min="0"
+                    max="100"
+                    style="visibility: hidden; height: 0; width: 0"
+                  >
+                    80%
+                  </progress>
+                </div>
+              </div>
+              <div class="skill-card">
+                <h1 class="education-title">JavaScript</h1>
+                <div class="progress-bar-js">
+                  <progress
+                    value="80"
+                    min="0"
+                    max="100"
+                    style="visibility: hidden; height: 0; width: 0"
+                  >
+                    80%
+                  </progress>
+                </div>
+              </div>
+            </div>
+
+            <div class="skills-grid-container">
+              <div class="skills-grid-item">
+                <label for="file">HTML:</label>
+                <div>
+                  <progress id="file" value="80" max="100">85%</progress>
+                </div>
+              </div>
+              <div class="skills-grid-item">
+                <label for="file">NodeJS:</label>
+                <div>
+                  <progress id="file" value="80" max="100">80%</progress>
+                </div>
+              </div>
+              <div class="skills-grid-item">
+                <label for="file">Typescript:</label>
+                <div>
+                  <progress id="file" value="70" max="100">70%</progress>
+                </div>
+              </div>
+              <div class="skills-grid-item">
+                <label for="file">NestJS:</label>
+                <div>
+                  <progress id="file" value="70" max="100">70%</progress>
+                </div>
+              </div>
+              <div class="skills-grid-item">
+                <label for="file">Graphql:</label>
+                <div>
+                  <progress id="file" value="80" max="100">70%</progress>
+                </div>
+              </div>
+              <div class="skills-grid-item">
+                <label for="file">MySQL</label>
+                <div>
+                  <progress id="file" value="85" max="100">80%</progress>
+                </div>
+              </div>
+              <div class="skills-grid-item">
+                <label for="file">C++</label>
+                <div>
+                  <progress id="file" value="85" max="100">80%</progress>
+                </div>
+              </div>
+              <div class="skills-grid-item">
+                <label for="file">Java</label>
+                <div>
+                  <progress id="file" value="85" max="100">80%</progress>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+    <script>
+      const sections = document.querySelectorAll("section");
+      const navLi = document.querySelectorAll(".education-left ul li");
+
+      window.onscroll = () => {
+        var current = "";
+
+        sections.forEach((section) => {
+          const sectionTop = section.offsetTop;
+          if (pageYOffset >= sectionTop - 250) {
+            current = section.getAttribute("id");
+          }
+        });
+        console.log(current);
+        navLi.forEach((li) => {
+          li.classList.remove("active");
+          if (li.classList.contains(current)) {
+            li.classList.add("active");
+          }
+        });
+      };
+    </script>
+  </body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div class="nav-container">
+      <div class="nav-wrapper">
+        <nav class="nav-items-container">
+          <a class="nav-logo" href="#"
+            ><span
+              style="
+                padding: 0 9px;
+                background: #3117d5;
+                border-radius: 50%;
+                color: rgb(255, 255, 255);
+              "
+              >G</span
+            >aurav</a
+          >
+          <ul class="nav-items" id="topNav">
+            <a href="#home"><li class="nav-item">Home</li></a>
+            <a class="nav-item-icon" href="#home"
+              ><i class="material-icons">home</i></a
+            >
+            <a href="#about"><li class="nav-item">About</li></a>
+            <a class="nav-item-icon" href="#about"
+              ><i class="material-icons">account_circle</i></a
+            >
+            <a href="#resume"><li class="nav-item">Resume</li></a>
+            <a class="nav-item-icon" href="#resume"
+              ><i class="material-icons">laptop</i></a
+            >
+            <a href="#projects"><li class="nav-item">Projects</li></a>
+            <a class="nav-item-icon" href="#projects"
+              ><i class="material-icons">web</i></a
+            >
+            <a href="#contact"><li class="nav-item">Contact</li></a>
+            <a class="nav-item-icon" href="#contact"
+              ><i class="material-icons">phone</i></a
+            >
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="material-icons">menu</i>
+            </a>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("topNav");
+        if (x.className === "nav-items") {
+          x.className += " responsive";
+        } else {
+          x.className = "nav-items";
+        }
+        console.log(x.className);
+      }
+    </script>
+  </body>
+</html>
